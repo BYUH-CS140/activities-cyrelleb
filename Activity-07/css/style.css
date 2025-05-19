@@ -1,0 +1,71 @@
+        body { 
+            background-color: #6AB0E3; 
+            font-family: Arial, Helvetica, sans-serif; 
+            color: white;
+             }
+
+        img  { 
+           width: 50%;
+           border-radius: 15%;
+           margin: auto; display: 
+           flex; justify-content: center;
+             }
+
+        iframe {
+           margin: auto; display: 
+           flex; justify-content: center;
+           margin-bottom: 5%;
+        }
+        header {
+           background-color: #89CFF0;
+           padding: 20px; 
+           text-align: center; 
+           padding-top: 1px; 
+           padding-bottom: 30px;
+        }
+         header a {
+           background-color: #89CFF0;
+           padding: 20px; 
+           text-align: center; 
+           padding-top: 1px; 
+           padding-bottom: 30px;
+           text-decoration:none;
+           font-family: Arial, Helvetica, sans-serif; 
+           color: white;
+
+
+        }
+
+        li {
+            text-decoration-style: dashed;
+        }
+
+        footer {
+           padding-top: 20%;
+           background-color: #89CFF0;
+           padding: 20px; 
+           text-align: center; 
+           padding-top: 1px; 
+           padding-bottom: 30px;
+           font-family: Arial, Helvetica, sans-serif; 
+           color: white;
+        }
+
+
+        #title{
+            text-align: center;
+            margin-top: 2.5%;
+            margin-bottom: 2.5%;
+        }
+
+        p {
+            font-size: large;
+        }
+
+        .heading:hover{ /* This style makes headings change color on hover */
+            color: #063150;
+        }
+
+        ul{ /* This style makes the bullet points into squares */
+            list-style-type: square;
+        }
