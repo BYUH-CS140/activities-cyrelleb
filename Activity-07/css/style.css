@@ -69,3 +69,7 @@
         ul{ /* This style makes the bullet points into squares */
             list-style-type: square;
         }
+        h1 {
+            font-family: "Passion One", sans-serif;
+             font-weight: 700;
+            }
