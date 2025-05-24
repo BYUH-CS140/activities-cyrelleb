@@ -1,0 +1,131 @@
+        body { 
+            background-color:#89CFF0;
+            background-size: 100%;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: rgb(255, 255, 255);
+             }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+}
+
+        img  { 
+           width: 50%;
+           border-radius: 15%;
+           margin: auto; display: 
+           flex; justify-content: center;
+             }
+
+        .nav-list{
+            list-style: none;
+            display: flex; gap: 1rem;
+             
+        }
+
+         .nav-list li{
+            padding: 20px;
+            margin: auto;
+            background-color: rgba(255,255,255,0.2); 
+            border-radius: 4px;
+            
+        }
+
+        .nav-list a{
+            color: #494646;
+            font-size: 1rem;
+            text-decoration: none;
+            
+            
+
+        }
+
+        .nav-list a:hover{
+            color: #200649;
+            background: #fff;
+            padding: 5px;
+        }
+
+        .materials1{
+            list-style-type: disc;
+            background-color: #ffffff; padding: 1rem; border-radius: 6px; 
+            width: 40%;
+            color: #063150;
+        }
+    
+
+        iframe {
+           margin: auto; display: 
+           flex; justify-content: center;
+           margin-bottom: 5%;
+        }
+
+
+        #page-header{
+            background:linear-gradient(rgba(63, 84, 167, 0.5),#89CFF0),/* overlay */
+        url("../img/bg.jpeg") center / cover fixed no-repeat;
+            background-size: cover; color: #42365e; 
+            padding: 1rem;
+        }
+        /**header {
+           background-color: #89CFF0;
+           padding: 20px; 
+           text-align: center; 
+           padding-top: 1px; 
+           padding-bottom: 30px;
+        }
+         header a {
+           background-color: #89CFF0;
+           padding: 20px; 
+           text-align: center; 
+           padding-top: 1px; 
+           padding-bottom: 30px;
+           text-decoration:none;
+           font-family: Arial, Helvetica, sans-serif; 
+           color: white;
+           font-size: large;
+
+
+        }
+
+        a:hover{
+            color: #063150;
+        } **/
+
+
+        footer {
+           padding-top: 20%;
+           background:linear-gradient(#89CFF0, rgba(63, 84, 167, 0.5)),/* overlay */
+        url("../img/bg.jpeg") center / cover fixed no-repeat;
+           padding: 20px; 
+           text-align: center; 
+           padding-top: 1px; 
+           padding-bottom: 30px;
+           font-family: Arial, Helvetica, sans-serif; 
+           color: rgb(28, 10, 147);
+        }
+
+        footer a{
+            text-decoration: none;
+            color: rgb(28, 10, 147);
+        }
+
+
+        #title{
+            text-align: center;
+            margin-top: 2.5%;
+            margin-bottom: 2.5%;
+        }
+
+        p {
+            font-size: large;
+        }
+
+        .heading:hover{ /* This style makes headings change color on hover */
+            color: #063150;
+        }
+
+        #title1 {
+            font-family: "Passion One", sans-serif;
+            text-align: center;
+            }
