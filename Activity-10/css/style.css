@@ -1,0 +1,81 @@
+body {
+  background-color: forestgreen; /*typo background color needs a dash*/
+  margin: 0;
+  font-family: 'Gill Sans MT',  sans-serif; /* instead of Gill sans, should be 
+  'Gill Sans MT',  sans-serif; add MT so it would look like the photo */ 
+}
+
+header {
+  background-color: Gold; /*typo G0ld to Gold*/
+  color: #004d00;
+  text-align: center;
+  font-size: 2em;
+  padding: 20px; /*typo paddding to padding*/
+  margin: 0;
+}
+
+nav { /*is not a class remove .*/
+  background-color: #2e1a1a;
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav li {
+  display: inline;
+  border-right: 1px solid grey;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: gold;
+  font-weight: bold;
+  padding: 14px 16px;
+}
+
+nav a:hover { /* remove extra colon*/
+  background-color: gold;
+  color: #2e1a1a;
+}
+
+main {
+  background-color: lightgreen;
+  margin: 50px 100px; /* does not have a unit, add unit */
+  padding: 50px;
+}
+
+#garden { /* has no #, it's an id*/
+  border: 5px solid brown;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px grey;
+  height: 30%; /*unit problem */
+  width: 30%;
+}
+
+section {
+  margin-top: 30px; /*typo margintop should be margin-top*/
+}
+
+h2 {
+  color: brown;
+}
+
+footer {
+  background-color: #2e1a1a;
+  opacity: 0.9;
+  padding: 30px 50px;
+  color: gold;
+  text-align: center;
+}
