@@ -1,6 +1,5 @@
 body { 
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     color: rgba(108, 64, 14, 0.988);
     font-family: Arial, Helvetica, sans-serif;
 
@@ -10,21 +9,28 @@ body {
     url("../img/bg.jpeg") center / cover fixed no-repeat;
     }
 
-#flag  { 
+/*#flag  { 
     width: 50%;
     border-radius: 15%;
     margin: auto; display: flex; 
     justify-content: center;
-    }
+    }*/
+
+  #flag{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15%;
+  }
 
 header {
     text-align: center;
     background-color: beige;
     margin: auto;
-    padding-top: 2%;
-    padding-bottom: 6%;
+    padding: 1rem;
 }
-header a {
+/*header a {
   background-color:beige;
   font-weight:600;
   padding: 20px; 
@@ -40,9 +46,47 @@ header a {
 
 a:hover{
   color: blanchedalmond;
+}*/
+
+nav {
+  display: flex;
+  flex-direction: column; /* Mobile-first: stack vertically */
+  align-items: center;
+  gap: 10px;
 }
 
+header a {
+  background-color:beige;
+  font-weight:600; 
+  text-align: center; 
+  padding-top: 1px; 
+  text-decoration:none;
+  font-family: Arial, Helvetica, sans-serif; 
+  color: rgba(108, 64, 14, 0.988);
 
+
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+a:hover{
+  color: blanchedalmond;
+  background-color: rgb(127, 97, 60);
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* stack on mobile */
+  gap: 1rem;
+  padding: 1rem;
+}
 
 ul.custom-bullets {
   list-style: none; /* remove default bullets */
@@ -51,7 +95,7 @@ ul.custom-bullets {
 
 ul.custom-bullets li {
   background: url("../img/bp.png") no-repeat left center;
-  background-size: 20px 20px; /* adjust as needed */
+  background-size:   20px 20px; /* adjust as needed */
   padding-left: 30px; /* space for the image */
   margin-bottom: 10px;
 }
@@ -59,7 +103,7 @@ ul.custom-bullets li {
 footer{
     text-align: center;
     background-color: beige;
-    margin: auto;
+    margin-top: 20px;
     padding-top: 2%;
     padding-bottom: 2%;
     font-weight:600;
@@ -67,13 +111,21 @@ footer{
 
 .info{
     font-weight: 500;
+    padding-left: 0px;
 }
 
-iframe {
+/*iframe {
            margin: auto; display: 
            flex; justify-content: center;
            margin-bottom: 5%;
-        }
+        }*/
+
+iframe {
+  display: block;
+  margin:  auto;
+  max-width: 70%;
+  height: auto;
+}
 
 #title{
   font-family: "limelight", sans-serif;
@@ -84,13 +136,27 @@ iframe {
   font-family: "limelight", sans-serif;
   font-weight: 200;
 }
-figure img
+
+.fullwidth { /*why visit hk?*/
+  width: 100%;
+  text-align: center;
+}
+
+/*figure img
 {
   width: 650px;
   margin: auto; display: flex; 
   justify-content: center;
   padding-bottom: 2%;
 
+}*/
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 2%;
 }
 
 figure{
@@ -98,4 +164,286 @@ figure{
 }
 p{
   margin: 5%;
+}
+
+/* Tablet layout: 2-column layout */
+@media (min-width: 600px) {
+  nav {
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  nav a{
+    margin: 20px;
+  }
+
+   #flag{
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15%;
+  }
+
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  figure img {
+    max-width: 90%;
+    width: 80%;
+  }
+
+  .fullwidth { /*WHY VISIT HK 2*/
+  width: 100%;
+  font-size: larger;
+  text-align: center;
+}
+  .container h2{
+    font-size: 30px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+ .section-pair {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  .fivethings{
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  }
+
+
+footer{
+  margin-top: 30px;
+}
+
+/*disneyland 2 column */
+.disney-layout {
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .disney1,
+  .disney2,
+  .disney3,
+  .disney-caption {
+    flex: 1 1 48%;
+  }
+
+  .disney-caption{
+    margin-top: 50px;;
+  }
+
+  .fullwidth {
+    flex: 1 1 100%;
+  }
+
+  /*food column2*/
+
+  .food-layout {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+   justify-content: space-between;
+  }
+
+  .food1,
+  .food2,
+  .food3
+ {
+    flex: 1 1 48%;
+  }
+.food2 img{
+  width: 70%;
+}
+
+  .fullwidth {
+    flex: 1 1 100%;
+  }
+/*shatin 2 column*/
+.shatin-layout {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+   justify-content: space-between;
+  }
+
+  .shatin1,
+  .shatin2,
+  .shatin3
+ {
+    flex: 1 1 48%;
+  }
+.food2 img{
+  width: 70%;
+}
+
+  .fullwidth {
+    flex: 1 1 100%;
+  }
+
+/*taikwun 2 column*/
+.taikwun-layout {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+   justify-content: space-between;
+  }
+
+  .taikwun1,
+  .taikwun2,
+  .taikwun3
+ {
+    flex: 1 1 48%;
+  }
+  .fullwidth {
+    flex: 1 1 100%;
+  }
+
+}
+
+
+
+
+
+ 
+
+
+
+/* Desktop layout: 3-column layout */
+@media (min-width: 1024px) {
+  .info {
+    flex: 1 1 30%;
+  }
+
+  .fullwidth { /*WHY VISIT HK 2*/
+  width: 100%;
+  font-size: larger;
+  text-align: center;
+}
+
+  figure img {
+    max-width: 80%;
+    width: 100%;
+  }
+
+  iframe {
+    width: 640px;
+    height: 360px;
+  }
+
+  /*index 3 columnnnnn*/
+
+  
+  .three-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+.section-pair{
+  max-width: 50%;
+}
+
+
+  .video {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+    clear: both;
+  }
+
+  .video iframe {
+    width: 640px;
+    height: 360px;
+    max-width: 90%;
+    border: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .three-columns + .video {
+  flex: none;
+  max-width: none;
+}
+
+  #flag {
+    max-width: 50%;
+    height: auto;
+    border-radius: 15%;
+  }
+
+/*disneyland*/
+ .disney1,
+  .disney2,
+  .disney3 {
+    flex: 1 1 30%;
+  }
+
+  .disney-caption {
+    flex: 1 1 100%;
+  }
+
+  .disney3{
+    max-width: 400px;
+  }
+
+  /*food*/
+  .food1,
+  .food2,
+  .food3
+ {
+    flex: 1 1 30%;
+  }
+.food2 img{
+  width: 70%;
+}
+
+  .fullwidth {
+    flex: 1 1 100%;
+  }
+
+  /*shatin*/
+ .shatin1,
+  .shatin2,
+  .shatin3
+ {
+     flex: 1 1 30%;
+  }
+
+  .fullwidth {
+    flex: 1 1 100%;
+  }
+
+  /*taikwun*/
+ .taikwun1,
+  .taikwun2,
+  .taikwun3
+ {
+    flex: 1 1 30%;
+  }
+  .fullwidth {
+    flex: 1 1 100%;
+  }
+
+
+
 }
