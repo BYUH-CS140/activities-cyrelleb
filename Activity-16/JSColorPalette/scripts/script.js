@@ -22,6 +22,7 @@ function addToHistory(color) {
     newColorBox.style.backgroundColor = color;
     newColorBox.classList.add('color-box');
     historyDiv.appendChild(newColorBox);
+
 }
 
 function getRandomColor() {
