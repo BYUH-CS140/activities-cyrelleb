@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #e5eef3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    /* Reduced padding */
+}
+
+.logo-link {
+    display: block;
+    margin-bottom: 0.5rem;
+    /* Small spacing between logo and links */
+}
+
+header .logo {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    /* Tighter spacing between nav links */
+}
+
+.active{
+    color: #1f61aa;
+}
+
+
+header a {
+    text-decoration: none;
+    color:#ACC6DF;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.3s ease;
+    padding: 15px;
+
+}
+
+.hero {
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.introduction {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 1rem auto;
+    width: 90%;
+    font-size: large;
+    color: #1f61aa;
+
+}
+
+header a:hover {
+    color: #5599d3;
+}
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  margin-left: 8px;
+  background-image: url("../img/tail.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+ 
+}
+
+.main-nav a:hover::after {
+  opacity: 1;
+}
+
+
+footer {
+    background-color: #e5eef3;
+    padding: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: small;
+    color: #1f61aa;
+}
+
+.social {
+    margin-bottom: 1rem;
+}
+
+.social a {
+    font-size: 2rem;
+    color: #1f61aa;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #5599d3;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+.container2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 1rem auto;
+    width: 90%;
+    font-size: large;
+    color: #1f61aa;
+}
+
+.hero2{
+    max-width: 70%;
+}
+
+/*why Volleyball----------------------------------------mobile*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whyvolleyballpic {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1f61aa;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+@media (min-width: 768px) /* tablet*/
+
+    {
+
+    header a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: color 0.3s ease;
+        padding: 10px;
+
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+    }
+
+
+   main.container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px; /* Adjust this based on your content */
+}
+
+    .hero {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .introduction {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #1f61aa;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 1rem 0 0 1rem;
+        box-shadow: -4px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .container2 {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+  }
+
+     .container2 .hero2 {
+    flex: 1;
+    max-width: 70%;
+  }
+
+  .introduction2 {
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #1f61aa;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 1rem;
+    box-shadow: -4px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .introduction2 button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #1f61aa;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .introduction2 button:hover {
+    background-color: #5599d3;
+  }
+
+
+
+  /*why Volleyball*/
+.whyvolleyball{
+    flex: 1;
+    max-width: 70%;
+     display: block;
+    margin: 1rem auto;
+    width: 50%;
+    max-width: 100px;
+    height: auto;
+   
+
+}
+  
+}
+
+/* Desktop layout */
+@media (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem;
+        flex-wrap: wrap;
+    }
+
+
+    .main-nav {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 2;
+    }
+
+    .main-nav a {
+        position: relative;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: color 0.3s ease;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .hero {
+        max-width: 100%;
+    }
+
+    .introduction {
+        width: 30%;
+        padding: 2rem;
+        font-size: 1.1rem;
+    }
+
+
+    footer {
+        text-align: center;
+    }
+}
