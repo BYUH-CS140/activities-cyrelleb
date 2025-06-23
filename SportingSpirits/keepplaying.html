@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>getinvolved</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <img src="img/White_logo.png" alt="Sporting Spirits logo" class="logo" />
+            </a>
+        </div>
+        <nav class="main-nav">
+            <a href="whyvolleyball.html">Why Volleyball?</a>
+            <a href="programs.html">Programs</a>
+            <a href="getinvolved.html">Get Involved</a>
+            <a href="keepplaying.html" class="active">Keep Playing</a>
+            <a href="signup.html" class="signup-link">Sign Up</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="keepplaying">
+            <img src="img/v4.avif" alt="a photo of a volleyball on the floor." class="keepplayingimg" />
+            <section class="countdown-section">
+                <h2 class="heading">Next Volleyball Camp Starts In:</h2>
+                <div id="countdown" class="countdown-box">
+                    <span id="days">00</span> Days
+                    <span id="hours">00</span> Hours
+                    <span id="minutes">00</span> Minutes
+                    <span id="seconds">00</span> Seconds
+                </div>
+                <section class="camp-gallery">
+                    <h2 class="heading">Past Camps Gallery</h2>
+                    <div class="gallery-grid">
+                        <img src="img/v20.jpeg" alt="Team huddle" onclick="openModal(this)" />
+                        <img src="img/v16.jpeg" alt="Outdoor" onclick="openModal(this)" />
+                        <img src="img/v7.jpeg" alt="Celebrating a win" onclick="openModal(this)" />
+                        <img src="img/v10.jpeg" alt="Training session" onclick="openModal(this)" />
+                    </div>
+                </section>
+            </section>
+            <div id="imgModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImg">
+            </div>
+</body>
+
+<footer>
+    <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>Images licensed from Adobe Stock</p>
+    <p>&copy; 2025 Cyrelle Briz. All rights reserved.</p>
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</html>

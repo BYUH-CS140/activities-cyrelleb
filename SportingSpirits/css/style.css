@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
     background-color: #e5eef3;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.5rem 1rem;
+    padding: 0;
     /* Reduced padding */
 }
 
@@ -20,9 +24,9 @@ header {
 }
 
 header .logo {
-    width: 300px;
+    width: 250px;
     display: block;
-    margin: 0 auto;
+    margin-right: 20px;
 }
 
 nav {
@@ -33,20 +37,23 @@ nav {
     /* Tighter spacing between nav links */
 }
 
-.active{
+.active {
+    /* activeeeeeeeee link--------------------------------------------------*/
     color: #1f61aa;
+    font-weight: 600;
 }
 
 
 header a {
     text-decoration: none;
-    color:#ACC6DF;
+    color: #ACC6DF;
     font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
     transition: color 0.3s ease;
     padding: 15px;
 
 }
+
 
 .hero {
     display: block;
@@ -66,28 +73,32 @@ header a {
 
 }
 
+/* flame tail icon------------------------------------------------------->*/
+.main-nav a {
+    position: relative;
+}
+
 header a:hover {
     color: #5599d3;
 }
 
 .main-nav a::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 80%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  margin-left: 8px;
-  background-image: url("../img/tail.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0;
- 
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/tail.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+
 }
 
 .main-nav a:hover::after {
-  opacity: 1;
+    opacity: 1;
 }
 
 
@@ -122,7 +133,8 @@ footer {
     padding: 1rem 0;
     gap: 1rem;
 }
-.container2 p{
+
+.container2 p {
     font-family: Arial, Helvetica, sans-serif;
     display: block;
     margin: 1rem auto;
@@ -131,37 +143,191 @@ footer {
     color: #1f61aa;
 }
 
-.hero2{
-    max-width: 70%;
+.hero2 {
+    max-width: 100%;
 }
 
 /*why Volleyball----------------------------------------mobile*/
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .whyvolleyballpic {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .about {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #1f61aa;
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/*----------------------------------------`-------------------------programs-------------------------------------------*/
+
+.spikeaid,
+.shareyourstory {
+    text-align: center;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.spikeaid img,
+.shareyourstory img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.spikeaid .heading,
+.shareyourstory .heading {
+    color: #1f61aa;
+    margin-bottom: 1rem;
+}
+
+.spikeaid p,
+.shareyourstory2 p {
+    font-size: 1rem;
+    color: #1f61aa;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.spikeaid button,
+.shareyourstory2 button {
+    padding: 0.75rem 1.5rem;
+    background-color: #1f61aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.spikeaid button:hover,
+.shareyourstory2 button:hover {
+    background-color: #5599d3;
+}
+
+
+/*------------------------------------------keep playing--------*/
+.keepplayingimg {
+    margin: 0;
+    width: 100%;
+}
+
+.countdown-section {
+  background: linear-gradient(to right, #e5eef3, #d1e5f5);
+  padding: 2rem 1rem;
+  text-align: center;
   color: #1f61aa;
-  padding: 1.5rem;
-  width: 90%;
-  max-width: 800px;
+}
+
+.countdown-section .heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Centering the countdown box */
+.countdown-box {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: #1f61aa;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  /* Centering */
+  display: inline-block;
   margin: 0 auto;
+  text-align: center;
+}
+.camp-gallery {
+  padding: 5rem 1rem;
+  text-align: center;
+  color: #1f61aa;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*-----------------------------------clickabke gallery----------------------------------*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.introduction2 button {
+  padding: 0.75rem 1.5rem;
+  background-color: #1f61aa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+}
+
+.introduction2 button:hover {
+  background-color: #5599d3;
 }
 
 
 
-@media (min-width: 768px) /* tablet*/
+
+@media (min-width: 768px)
+/* tablet*/
 
     {
 
@@ -178,6 +344,7 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
     }
 
     nav {
@@ -187,14 +354,14 @@ footer {
     }
 
 
-   main.container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    min-height: 400px; /* Adjust this based on your content */
-}
+    main.container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        min-height: 400px;
+    }
 
     .hero {
         width: 100%;
@@ -223,56 +390,63 @@ footer {
         justify-content: center;
         align-items: center;
         padding: 2rem;
+    }
+
+    .container2 .hero2 {
+        flex: 1;
+        max-width: 70%;
+    }
+
+    .introduction2 {
+        flex: 1;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #1f61aa;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 1rem;
+        box-shadow: -4px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .introduction2 button {
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        color: white;
+        background-color: #1f61aa;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .introduction2 button:hover {
+        background-color: #5599d3;
+    }
+    
+
+
+
+    /*why Volleyball*/
+    .whyvolleyball {
+        flex: 1;
+        max-width: 70%;
+        display: block;
+        margin: 1rem auto;
+        width: 50%;
+        max-width: 100px;
+        height: auto;
+
+
+    }
+
+    /*keep playing---------------------------------------keep playing-----------------------*/
+
+    .gallery-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
-     .container2 .hero2 {
-    flex: 1;
-    max-width: 70%;
-  }
-
-  .introduction2 {
-    flex: 1;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #1f61aa;
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 1rem;
-    box-shadow: -4px 4px 12px rgba(0, 0, 0, 0.1);
-  }
-
-  .introduction2 button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    color: white;
-    background-color: #1f61aa;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .introduction2 button:hover {
-    background-color: #5599d3;
-  }
-
-
-
-  /*why Volleyball*/
-.whyvolleyball{
-    flex: 1;
-    max-width: 70%;
-     display: block;
-    margin: 1rem auto;
-    width: 50%;
-    max-width: 100px;
-    height: auto;
-   
-
-}
-  
 }
 
 /* Desktop layout */
@@ -304,6 +478,38 @@ footer {
         padding: 10px;
     }
 
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+
+
+    /* flame tail icon------------------------------------------------------->*/
+    header a:hover {
+        color: #5599d3;
+    }
+
+    .main-nav a::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        margin-left: 8px;
+        background-image: url("../img/tail.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0;
+
+    }
+
+    .main-nav a:hover::after {
+        opacity: 1;
+    }
+
+
     .container {
         flex-direction: row;
     }
@@ -322,4 +528,119 @@ footer {
     footer {
         text-align: center;
     }
+
+
+    /*--------------------------------------programs-------------------------------------------*/
+
+    .spikeaid,
+    .shareyourstory {
+        max-width: 1000px;
+        margin: 3rem auto;
+        padding: 0 3rem;
+        text-align: left;
+    }
+
+    .spikeaid img,
+    .shareyourstory img {
+        display: block;
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        border-radius: 10px;
+        margin: 1rem 0;
+    }
+
+    .spikeaid .heading,
+    .shareyourstory .heading {
+        font-size: 2rem;
+        color: #1f61aa;
+        margin-bottom: 1rem;
+    }
+
+    .spikeaid p,
+    .shareyourstory2 p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #1f61aa;
+        margin: 1rem 0 2rem;
+    }
+
+    .spikeaid button,
+    .shareyourstory2 button {
+        padding: 0.75rem 1.5rem;
+        background-color: #1f61aa;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .spikeaid button:hover,
+    .shareyourstory2 button:hover {
+        background-color: #5599d3;
+    }
+
+
+    /*-----------------------------------keep playing---------------------------------*/
+
+    .keepplayingimg {
+        width: 100%;
+       /* display: block;
+        margin-left: auto;
+        margin-right: auto;*/
+
+
+}
+
+ .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ---------------- Sign Up Page ----------------- */
+
+.signup-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #e5eef3;
+  border-radius: 10px;
+  color: #1f61aa;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.signup-form input,
+.signup-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.signup-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #1f61aa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #5599d3;
+}
+
+.form-message {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: red;
 }
